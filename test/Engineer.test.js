@@ -1,37 +1,25 @@
-const Engineer = require('../lib/Engineer');
-const { expectToBe, expectStr, expectNum } = require('../utils/expect');
+const Engineer = require("../lib/Engineer");
 
-const engineer = new Engineer('John', 'Doe', 1, 'jamescodes');
-
-test('creates an engineer object', () => {
-    expectToBe(engineer.firstName, 'John');
-    expectToBe(engineer.lastName, 'Doe');
-    expectNum(engineer.id);
-    expectStr(engineer.email, '@');
-    expectToBe(engineer.role, 'Engineer');
-    expectToBe(engineer.icon, 'fas fa-glasses');
+test("Can the new Engineer be instantiated", () => {
+    const eng = new Employee("Zion", 2, "Zionthekid@yahoo.com","Zioncodes")
+    expect(typeof(em)).tobe("object");
+    expect(em.name).tobe("Remy");
+    expect(em.id).tobe(1);
+    expect(em.email).tobe("Zionthekid@yahoo.com");
 });
-
-test('gets engineer\'s name', () => {
-    expectStr(engineer.getName(), `${engineer.firstName} ${engineer.lastName}`);
+test("Name returned", () => {
+  const em = new Employee("Remy", 1, "Zionthekid@yahoo.com");
+  expect(em.getName(this.name)).toBe("Remy");
 });
-
-test('gets engineer\'s ID', () => {
-    expectStr(engineer.getId(), `${engineer.id}`);
+test("Id value is passed", () => {
+  const em = new Employee("Remy", 1, "Zionthekid@yahoo.com");
+  expect(em.getId(this.id)).toBe(1);
 });
-
-test('gets engineer\'s email', () => {
-    expectStr(engineer.getEmail(), engineer.email);
+test("Email value is passed", () => {
+  const em = new Employee("Remy", 1, "Zionthekid@yahoo.com");
+  expect(em.getEmail(this.email)).toBe("Zionthekid@yahoo.com");
 });
-
-test('gets engineer\'s role', () => {
-    expectStr(engineer.getRole(), engineer.role);
-});
-
-test('gets engineer\'s github', () => {
-    expectStr(engineer.getGithub(), engineer.github);
-});
-
-test('gets engineer\'s icon', () => {
-    expectStr(engineer.getIcon(), engineer.icon);
+test("Role of Employee", () => {
+  const em = new Employee("Remy", 1, "Zionthekid@yahoo.com");
+  expect(em.getRole(this.id)).toBe("Employee");
 });
