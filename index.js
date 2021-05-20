@@ -3,8 +3,6 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const fs = require("fs");
-//const generateHTML = require("./lib/generateHTML");
-//const getEmployee = require("./lib/generateHTML");
 
 let managerString = " ";
 let engineerString = " ";
@@ -301,9 +299,6 @@ function generateHTML() {
   const myEngineer = fs.readFileSync("engineer.txt");
   const myIntern = fs.readFileSync("intern.txt");
 
-  // const print = managerString + engineerString + internString; // make await if dnt work
-  // const oldList = fs.readFileSync("employeeList.html");
-  // print += oldList;
   const html = `<!DOCTYPE html>
       <html lang="en">
 
@@ -351,4 +346,4 @@ function generateHTML() {
 }
 
 menu();
-// make sure emp exist ..and write to old list file
+

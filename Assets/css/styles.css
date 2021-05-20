@@ -1,0 +1,30 @@
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+  }
+  
+  .employee-section {
+    margin-top: 45px;
+  }
+
+  .employee-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card-header {
+    background-color: slategrey;
+    color: red;
+  }
+  
+  .my-card {
+    width: 15rem;
+    margin-left: 8rem;
+  }
+  
+ 
+  
