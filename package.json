@@ -1,20 +1,33 @@
 {
   "name": "team-profile-generator",
   "version": "1.0.0",
-  "description": "Your task is to build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Testing is key to making code maintainable, so you’ll also write a unit test for every part of your code and ensure that it passes each test.",
+  "description": "This application allows a manager to enter from the command-line, information about his/her employees, that will generate a HTML webpage that will display the summaries for each employee.",
   "main": "index.js",
   "directories": {
-    "lib": "lib",
-    "test": "test"
+    "lib": "lib"
   },
-  "dependencies": {},
+  "dependencies": {
+    "inquirer": "^8.0.0",
+    "jest": "^26.6.3"
+  },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reggiemace/team-profile-generator.git"
   },
   "keywords": [
-    "package.json"
+    "manager",
+    "team",
+    "intern",
+    "development"
   ],
-  "author": "Jacob Black",
-  "license": "ISC"
+  "author": "Reginald Mace",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reggiemace/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/reggiemace/team-profile-generator#readme"
 }
